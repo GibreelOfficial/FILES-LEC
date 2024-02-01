@@ -4,4 +4,7 @@ exam_score= input("Enter exam score: ")
 
 score_coversion=(course_work_mark/100)*70
 
-print(score_coversion)
+file= open("course work score.txt","w+")
+file.write(str(score_coversion))
+
+print(f"Hello,{student_name} your course work score is {score_coversion}")
