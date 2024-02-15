@@ -1,5 +1,6 @@
 gender=input("Enter your gender: ")
 cgpa = float(input("Entre your CGPA: "))
+award="none"
 
 cgpa_class ="None"
 
