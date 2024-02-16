@@ -9,6 +9,9 @@ wage=(PAYRATE*hours_worked)
 
 #tax computation
 if wage>TAXABLE_INCOME_THRESHOLD:
-    print(f"\n{name} Your wage is shs {wage} \nYou are eligible to pay tax")
+    tax=(0.1*wage)
+    net_income=(wage-tax)
+    print(f"Your Gross income is {wage}\nTax = {tax}\nNet income after tax= {net_income}")
 else:
-    print(f"\n{name} Your wage is shs {wage} \nYou aren't eligible to pay tax")
+    print(f"Your Net income is {wage}")
+ 
