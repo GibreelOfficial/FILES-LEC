@@ -2,21 +2,17 @@
 
 #manager
 manager_pay=20000
-
 #hourly workers
 hourly_worker_pay=300
 duty_time=40
-
 #commission workers
 commission_workers_fixed_pay=250
-
 #piece workers
 piece_worker_pay=200
 
 #Employee code menu
 print("SELECT EMPLOYEE CODE\n1) Managers\n2) Hourly worker\n3) Comission worker\n4) Piece worker")
 employee_code=int(input("Enter your employee code: "))
-
 #conditions
 if employee_code==1:
     print(f"Your weekly pay is ${manager_pay}")

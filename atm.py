@@ -5,7 +5,7 @@ transaction_selection="0"
 
 #Messages
 invalid_pin="Invalid PIN !!! try again"
-account_balance_error="Insufficient balance"
+account_balance_insufficient="Insufficient balance"
 
 #user verification & transaction
 pin_entry=input("Enter your pin: ")
@@ -22,7 +22,7 @@ if PIN==pin_entry:
     elif transaction_selection == 2:
         withdraw_amount=int(input("Enter withdraw amount: "))
         if withdraw_amount>account_balance:
-            print(account_balance_error)
+            print(account_balance_insufficient)
         else:
             pin_entry=input("Enter your pin: ")
             if PIN==pin_entry:
